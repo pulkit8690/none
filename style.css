@@ -1,0 +1,207 @@
+body {
+    padding-top: 80px; /* Add padding to the top of the body to make room for the fixed navigation bar */
+    background-image: url("");
+  }
+  
+
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f3e1e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-item a:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-nav .nav-item a:hover {
+    color: #e9ecef;
+  }
+
+  .navbar-nav .nav-item a:hover:before {
+    transform: scaleX(1);
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+  .navbar-brand .logo-c {
+    width: 30px;
+    height: 30px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .navbar-brand .logo-c:before,
+  .navbar-brand .logo-c:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+  }
+
+  .navbar-brand .logo-c:before {
+    width: 21px;
+    height: 6px;
+    top: 12px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-brand .logo-c:after {
+    width: 6px;
+    height: 21px;
+    top: 0;
+    left: 12px;
+    transform: rotate(45deg);
+  }
+
+  .search-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    width: 0;
+    padding: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .search-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  
+  .search-wrapper:hover .search-input {
+    width: 200px;
+    padding: 0.5rem;
+  }
+  
+  .search-wrapper:hover .search-btn {
+    transform: translateX(-30px);
+  }
+  .search-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(magnifying-glass.png); /* Replace with your magnifying glass image */
+    background-size: cover;
+  }
+  
+  
+
+
+
+
+.section-container {
+  padding: 2rem;
+  background-color: #333333;
+  color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e1b1b;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #f1e8e8;
+}
+
+.intro-text strong {
+  color: #bebbba;
+}
+
+.article {
+      height: 200px; /* Set the initial height to show half of the article */
+      overflow: hidden;
+      transition: height 0.5s ease; /* Add a smooth transition effect */
+    }
+
+
+ #code-input 
+{
+        width: 100%;
+        height: 200px;
+        font-family: monospace;
+}
+#output {
+        background-color: #f2f2f2;
+        padding: 10px;
+        font-family: monospace;
+      }
+
+
+.Subject{
+    color: darkred;
+}
+.pushable {
+    background: hsl(202, 51%, 65%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+.front {
+    display: block;
+    padding: -0px 42px;
+    border-radius: 12px;
+    font-size: 0.5rem;
+    background: hsl(184, 58%, 53%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-4px);
+  }
